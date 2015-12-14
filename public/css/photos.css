@@ -1,0 +1,209 @@
+body {
+	font-size: 1.5em;
+}
+
+/* http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+/* ftw? isn't that rtl for wtf? ;) */
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+/* End Box Sizing */
+
+/* http://mystrd.at/modern-clean-css-sticky-footer */
+html {
+	position:relative;
+	min-height:100%;
+}
+body {
+	margin:0 0 30px; /* bottom = footer height */
+}
+
+h3{
+	padding-bottom: .5em;
+	margin-top: 0;
+}
+
+footer {
+	position: absolute;
+	left:0;
+	bottom:0;
+	height:1.5em;
+	width:100%;
+	background-color:#eee;
+	background-color: transparent;
+	text-align:center;
+	padding:0;
+	margin: 0;
+	font-size: 70%;
+}
+/* End Sticky Footer */
+
+.flash_message {
+	width:100%;
+	text-align:center;
+	padding:5px;
+	position:absolute;
+	top:60px;
+	left:0;
+	background-color:#eee;
+	font-weight:bold;
+	border: 1px solid #bbb;
+}
+
+section {
+	display: block;
+	padding: 0;
+	border: 1px solid red;
+	margin-top: 95px; /* clear the nav bar and flash message */
+}
+
+label {
+	margin-top:10px;
+	margin-bottom:0;
+	display:block;
+}
+
+.checkboxLabel, .radioLabel {
+	display:inline;
+}
+
+input[type=text], input[type=password], select{
+	width: 100%;
+	font-size: 1em;
+}
+input[type=file]{
+	/*visibility: hidden;*/
+	width: 100%;
+	padding: 0;
+	border: 1px solid green;
+}
+
+.floatLeft{
+	float: left;
+}
+
+.floatRight{
+	float: right;
+}
+
+.clear{
+	clear: both;
+}
+
+
+
+textarea {
+	/*background-color: yellow;*/
+	height: 4em;
+	/*width: 100%;*/
+	min-width: 100%;
+	max-width: 100%;
+}
+
+/*form{
+font-size: 1.25em;
+border: red 1px solid;
+}*/
+/*
+button{
+	font-size: 1.25em;
+	background-color: gray;
+}*/
+
+/*ul.errors {
+color:  #900;
+margin:0;
+margin-top:5px;
+padding:1em;
+list-style-type:none;
+font-size: 1.25em;
+width: 80%;
+margin: 0 auto;
+padding-left: 2em;
+background-color: pink;
+text-align: center;
+
+}*/
+.git{
+	margin-left: 0.125em;
+	font-family: sans-serif;
+	font-size: 90%;
+}
+
+.navbar-default {
+	background-color: pink;
+	border: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+
+	/*border-bottom: 1px solid #aaa;*/
+	/*background-color:#eee;*/
+	/*background-color: transparent;*/
+	/*padding-right: 1.25em;*/
+}
+
+nav.navbar.navbar-default.navbar-fixed-top{
+	background-color: white;
+}
+
+ul.nav.navbar-nav.navbar-right li{
+	border: none;
+	font-size: .9em;
+	margin: 0;
+	/*background-color: violet;*/
+}
+
+ul.nav.navbar-nav.navbar-left{
+	/*border: none;*/
+}
+
+
+
+/*.navbar-header{
+	background-color: #ddd;
+	border: none;
+}*/
+
+
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
+	color: gray;
+	font-family: 'Shadows Into Light', 'cursive';
+	font-size: 2.5em;
+	font-weight: bold;
+	letter-spacing: .2em;
+	/*margin-left: 0.1em;
+	margin-top: 0.25em;*/
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	ul.nav.navbar-nav.navbar-right li{
+		background-color: #ddd;
+		border: 1px solid #888;
+		border-top: 1px solid #bbb;
+		border-bottom: 1px solid #888;
+		margin-right: 1em;
+		margin-left: 1em;
+		padding: 0;
+
+	}
+	ul.nav.navbar-nav.navbar-right li:hover{
+		background-color: #ccc;
+	}
+
+	#navbar.navbar-collapse.collapse {
+		border: none;
+		background-color: white;
+	}
+
+	.icon-bar{
+		color: red;
+	}
+
+
+}
