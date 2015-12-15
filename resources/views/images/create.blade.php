@@ -18,6 +18,11 @@
     </div>
 
     <div class='form-group'>
+        {!! Form::label('country', 'Country where taken') !!}
+        {!! Form::select('country', ['canada'=>'Canada', 'us'=>'United States'], null); !!}
+    </div>
+
+    <div class='form-group'>
         {!! Form::label('tags', 'Select Tags') !!}
         {!! Form::select('tags', array('2015'=>'2015', '2014'=>'2014', '2013'=>'2013', 'india'=>'india'), null); !!}
     </div>
