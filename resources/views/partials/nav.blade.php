@@ -22,9 +22,11 @@
         @if(Auth::check())
         <li><a href="/images/create" >Create &nbsp;<i class="fa fa-camera-retro fa-lg"></i></a>
         </li>
-        <li><a href="/">Upload &nbsp;<i class="fa fa-camera-retro fa-lg"></i></a>
+        <li><a href="/images/create" >Read &nbsp;<i class="fa fa-camera-retro fa-lg"></i></a>
         </li>
-        <li><a href="/">Find &nbsp;<i class="fa fa-camera-retro fa-lg"></i></a>
+        <li><a href="/">Update &nbsp;<i class="fa fa-camera-retro fa-lg"></i></a>
+        </li>
+        <li><a href="/">Delete &nbsp;<i class="fa fa-camera-retro fa-lg"></i></a>
         </li>
         <li><a href="/logout">Sign Out, {{ Auth::user()->name }}</a>
         </li>

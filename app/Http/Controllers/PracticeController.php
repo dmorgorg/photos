@@ -9,6 +9,26 @@ use App\Http\Controllers\Controller;
 
 class PracticeController extends Controller
 {
+    function getExample5(){
+        $date = new \App\Date;
+        $date->date = '2013-06-02';
+        $date->save();
+        dump($date->toArray());
+        $country = new \App\Country;
+        $country->country = 'India';
+        $country->save();
+        dump($country->toArray());
+        $image = new \App\Image;
+        $image->caption = 'Indian Railways';
+        $image->narrative = 'Trains running late may catch up time';
+        $image->filename = '2013-06-02-0157-1920.jpg';
+        $image->date()->associate($date);
+        //$image->date_id = $date->id;
+        $image->country()->associate($country);
+        $image->save();
+        dump($image->toArray());
+    }
+
 
     function getExample4(){
         $images = \App\Image::all();

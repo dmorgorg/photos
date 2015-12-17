@@ -6,5 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Image extends Model
 {
-    //
+    public function date(){
+        return $this->belongsTo('\App\Date');
+    }
+
+    public function country(){
+        return $this->belongsTo('\App\Country');
+    }
 }

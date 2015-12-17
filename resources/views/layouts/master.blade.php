@@ -42,9 +42,9 @@
     @include('partials.nav')
 
     <section class='row'>
-      <div class="col-lg-8 col-md-8 col-lg-push-2 col-md-push-2">
+      <!-- <div class="col-lg-8 col-md-8 col-lg-push-2 col-md-push-2"> -->
         {{-- Main page content will be yielded here --}} @yield('content')
-      </div>
+      <!-- </div> -->
     </section>
 
     <footer>

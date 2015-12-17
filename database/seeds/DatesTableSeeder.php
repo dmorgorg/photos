@@ -14,19 +14,19 @@ class DatesTableSeeder extends Seeder
         DB::table('dates')->insert([
             'created_at' => Carbon\Carbon::now()->toDateTimeString(),
             'updated_at' => Carbon\Carbon::now()->toDateTimeString(),
-            'first_name' => '2013-06-12',
+            'date' => '2013-06-12',
         ]);
 
         DB::table('dates')->insert([
             'created_at' => Carbon\Carbon::now()->toDateTimeString(),
             'updated_at' => Carbon\Carbon::now()->toDateTimeString(),
-            'first_name' => '2013-06-16',
+            'date' => '2013-06-16',
         ]);
 
         DB::table('dates')->insert([
             'created_at' => Carbon\Carbon::now()->toDateTimeString(),
             'updated_at' => Carbon\Carbon::now()->toDateTimeString(),
-            'first_name' => '2013-06-09',
+            'date' => '2013-06-09',
         ]);
 
     }

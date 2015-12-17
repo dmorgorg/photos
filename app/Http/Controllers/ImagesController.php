@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use App\Tag;
+// use App\Tag;
 
 
 class ImagesController extends Controller
@@ -23,8 +23,8 @@ class ImagesController extends Controller
     * Show all images
     */
     public function getIndex(){
-        $images = \App\Image::all();
-        return view('images.index')->with('images', $images);
+        // $images = \App\Image::all();
+        // return view('images.index')->with('images', $images);
     }
 
     /**
@@ -33,11 +33,13 @@ class ImagesController extends Controller
     */
     public function getCreate(){
 
-        // get list of tags?
-        // $tags = Tag::lists('tagname', 'id');
-        // dump($tags);
-        //
-        return view('images.create');
+        // get list of countries
+        $countryModel = new \App\Country();
+        $countries_for_dropdown = $countryModel->getCountriesForDropdown();
+
+        // dump($countries_for_dropdown);
+        return view('images.create')
+            ->with('countries_for_dropdown', $countries_for_dropdown);
     }
 
     public function getConfirm(){

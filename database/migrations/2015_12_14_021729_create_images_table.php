@@ -24,9 +24,9 @@ class CreateImagesTable extends Migration
 
             # The rest of the fields...
             $table->string('filename');
-            $table->string('title');
-            //$table->date('date_taken');
+            $table->string('caption');            
             $table->text('narrative');
+
 
         });
     }

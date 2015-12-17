@@ -31,6 +31,9 @@ Route::get('/images/create/confirm', 'ImagesController@getConfirm');
 
 
 if(App::environment('local')) {
+
+    Route::get('/logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
+    
     Route::get('/drop', function() {
         DB::statement('DROP database photos');
         DB::statement('CREATE database photos');
@@ -108,5 +111,3 @@ Route::get('/debug', function() {
 
     echo '</pre>';
 });
-
-Route::get('/logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');

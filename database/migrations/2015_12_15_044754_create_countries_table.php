@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateDatesTable extends Migration
+class CreateCountriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,13 +12,12 @@ class CreateDatesTable extends Migration
      */
     public function up()
     {
-        Schema::create('dates', function(Blueprint $table){
+        Schema::create('countries', function(Blueprint $table){
             $table->increments('id');
             $table->timestamps();
 
             # The rest of the fields...
-            $table->date('date');
-
+            $table->string('country');
         });
     }
 
@@ -29,6 +28,6 @@ class CreateDatesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('dates');
+        Schema::drop('countries');
     }
 }

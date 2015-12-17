@@ -11,35 +11,41 @@ class ImagesTableSeeder extends Seeder
     */
     public function run()
     {
-        $date_id = \App\Date::where('first_name', '=', '2013-06-09')->pluck('id');
-        dump($date_id);
+        $date_id = \App\Date::where('date', '=', '2013-06-12')->pluck('id');
+        $country_id = \App\Country::where('country', '=', 'India')->pluck('id');
+        dump($country_id);
         DB::table('images')->insert([
             'created_at'    => Carbon\Carbon::now()->toDateTimeString(),
             'updated_at'    => Carbon\Carbon::now()->toDateTimeString(),
-            'filename'      => '2013-06-12-123.jpg',
-            //'date_id'    => $date_id,
-            'narrative'     =>  'happy snap',
-            'title'         =>  'titleist'
+            'caption'       => 'Kashmir',
+            'narrative'     => 'balh blah blah',
+            'date_id'       => $date_id,
+            'country_id'    => $country_id,
         ]);
 
-        // $date_id = \App\Date::where('date', '=', '2013-06-16')->pluck('id');
-        // DB::table('images')->insert([
-        //     'created_at'    => Carbon\Carbon::now()->toDateTimeString(),
-        //     'updated_at'    => Carbon\Carbon::now()->toDateTimeString(),
-        //     'filename'      => '22013-06-16-034.jpg',
-        //     'date_taken'    => $date_id,
-        //     'narrative'     =>  'another happy snap',
-        // ]);
-        //
-        // $date_id = \App\Date::where('date', '=', '2013-06-09')->pluck('id');
-        // DB::table('images')->insert([
-        //     'created_at'    => Carbon\Carbon::now()->toDateTimeString(),
-        //     'updated_at'    => Carbon\Carbon::now()->toDateTimeString(),
-        //     'filename'      => '2013-06-09-345.jpg',
-        //     'date_taken'    => $date_id,
-        //     'narrative'     =>  'more of the same',
-        // ]);
+        $date_id = \App\Date::where('date','=','2013-06-16')->pluck('id');
+        $country_id = \App\Country::where('country', '=', 'India')->pluck('id');
+        DB::table('images')->insert([
+            'created_at'    => Carbon\Carbon::now()->toDateTimeString(),
+            'updated_at'    => Carbon\Carbon::now()->toDateTimeString(),
+            'filename'      => "some.jpg",
+            'caption'       => 'India',
+            'narrative'     => 'maybe lorem ipsum here',
+            'date_id'       => $date_id,
+            'country_id'    => $country_id,
+        ]);
 
+        $date_id = \App\Date::where('date','=','2013-06-09')->pluck('id');
+        $country_id = \App\Country::where('country', '=', 'India')->pluck('id');
+        DB::table('images')->insert([
+            'created_at'    => Carbon\Carbon::now()->toDateTimeString(),
+            'updated_at'    => Carbon\Carbon::now()->toDateTimeString(),
+            'filename'      => '123.jpg',
+            'caption'       => 'Ladakh',
+            'narrative'     =>  'once upon a time....',
+            'date_id'       => $date_id,
+            'country_id'    => $country_id,
+        ]);
 
 
     }
