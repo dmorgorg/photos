@@ -3,20 +3,19 @@
 /**
 * The Home Page
 */
-
 Route::get('/', 'PagesController@home');
 
 /**
-* Get all methods from ImagesController
+* Get all images from ImagesController
 */
+Route::get('/images/index', 'ImagesController@getIndex');
+
 Route::get('/images/create', [
     'middleware' => 'auth',
     'uses' => 'ImagesController@getCreate'
 ]);
 
-Route::get('/images/index', 'ImagesController@getIndex');
-
-Route::get('/images/create/confirm', 'ImagesController@getConfirm');
+Route::post('/images/create', 'ImagesController@postCreate');
 
 
 
@@ -33,7 +32,7 @@ Route::get('/images/create/confirm', 'ImagesController@getConfirm');
 if(App::environment('local')) {
 
     Route::get('/logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
-    
+
     Route::get('/drop', function() {
         DB::statement('DROP database photos');
         DB::statement('CREATE database photos');

@@ -21,11 +21,6 @@ body {
 	margin:0 0 30px; /* bottom = footer height */
 }
 
-h3{
-	padding-bottom: .5em;
-	margin-top: 0;
-}
-
 footer {
 	position: absolute;
 	left:0;
@@ -56,8 +51,8 @@ footer {
 section {
 	display: block;
 	padding: 0;
-	border: 1px solid red;
-	margin-top: 95px; /* clear the nav bar and flash message */
+	/*border: 1px solid red;*/
+	margin-top: 115px; /* clear the nav bar and flash message */
 }
 
 label {
@@ -70,15 +65,33 @@ label {
 	display:inline;
 }
 
-input[type=text], input[type=password], select{
+input[type=text], input[type=password]{
 	width: 100%;
-	font-size: 1em;
+	/*font-size: 1em;*/
+}
+
+select{
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+
+}
+
+input[type=submit]{
+	margin-top: 1em;
+}
+
+input[type=date]{
+	
+	width: 100%;
+
 }
 input[type=file]{
-	/*visibility: hidden;*/
-	width: 100%;
-	padding: 0;
-	border: 1px solid green;
+	margin-top: 1em;
+}
+
+.border{
+	border: 1px yellow solid;
 }
 
 .form-group {

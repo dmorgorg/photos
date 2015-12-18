@@ -13,4 +13,8 @@ class Image extends Model
     public function country(){
         return $this->belongsTo('\App\Country');
     }
+
+    public function tags(){
+        return $this->belongsToMany('\App\Tag')->withTimestamps();
+    }
 }

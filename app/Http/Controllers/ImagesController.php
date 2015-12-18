@@ -46,4 +46,8 @@ class ImagesController extends Controller
 
     }
 
+    public function postCreate(){
+
+    }
+
 }
