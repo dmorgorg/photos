@@ -9,6 +9,8 @@ Route::get('/', 'PagesController@home');
 * Get all images from ImagesController
 */
 Route::get('/images/index', 'ImagesController@getIndex');
+Route::get('/images', 'ImagesController@getIndex');
+
 
 Route::get('/images/create', [
     'middleware' => 'auth',

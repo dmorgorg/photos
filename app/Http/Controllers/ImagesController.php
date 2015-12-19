@@ -16,15 +16,17 @@ class ImagesController extends Controller
     */
     public function __construct()
     {
-        $this->middleware('auth');
+        // don't set the authentication middleware
+        // since guests should have access to the index page
+        // $this->middleware('auth');
     }
 
     /**
     * Show all images
     */
     public function getIndex(){
-        // $images = \App\Image::all();
-        // return view('images.index')->with('images', $images);
+        $images = \App\Image::all();
+         return view('images.index')->with('images', $images);
     }
 
     /**
