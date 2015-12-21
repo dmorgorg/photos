@@ -127,10 +127,10 @@ input#inputDate{
 	height: 2em;
 }
 
-#tagged {
+#tag_list {
 	margin-top: 1em;
 	width: 100%;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	color: red;
 }
 
@@ -142,11 +142,12 @@ input#inputDate{
 .pinkBG{ background: pink; }
 .greenBG{ background: green; }
 
-#renameOrWarn{
+#rename_or_warn{
 	font-size: 1.1em;
 	color: red;
 	text-align: right;
 	margin: 0;
+	float: right;
 }
 
 .vspace1em{
@@ -210,7 +211,7 @@ text-align: center;
 
 .navbar-default {
 	background-color: white;
-	opacity: 0.8;
+	opacity: 1;
 	border: none;
 	margin-bottom: 0;
 	padding-bottom: 0;

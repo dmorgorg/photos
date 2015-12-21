@@ -3,7 +3,10 @@
 /**
 * The Home Page
 */
-Route::get('/', 'PagesController@home');
+Route::get('/', [
+        'as' => 'home',
+        'uses' => 'PagesController@home'
+    ]);
 
 /**
 * Get all images from ImagesController

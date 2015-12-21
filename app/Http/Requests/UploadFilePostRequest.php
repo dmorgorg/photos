@@ -25,10 +25,10 @@ class UploadFilePostRequest extends Request
     {
         return
             // limit upload file size to 2Mb
-            // 'fileInput'     => 'required|image|mimes:jpeg,png|min:1|max:2000',
-            // 'countryInput'  => 'required',
-            // 'dateInput'     => 'required|date',
-            // 'tagging'       => 'required'
+            'fileInput'     => 'required|image|mimes:jpeg,png|min:1|max:500',
+            'countryInput'  => 'required',
+            'dateInput'     => 'required|date',
+            'tagInput'       => 'required'
         ];
     }
 }

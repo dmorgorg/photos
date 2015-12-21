@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "85bc8003497439130632b11cf8437094",
-    "content-hash": "36974bbbfae12c201496dfb3e4d85964",
+    "hash": "1ff41239ff3aa9639c64c207d408b2b0",
+    "content-hash": "192e6edfc71810409b2d542ffd8da8db",
     "packages": [
         {
             "name": "barryvdh/laravel-debugbar",
@@ -272,6 +272,126 @@
             "time": "2015-11-06 14:35:42"
         },
         {
+            "name": "guzzlehttp/psr7",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/psr7.git",
+                "reference": "4d0bdbe1206df7440219ce14c972aa57cc5e4982"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/4d0bdbe1206df7440219ce14c972aa57cc5e4982",
+                "reference": "4d0bdbe1206df7440219ce14c972aa57cc5e4982",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "psr/http-message": "~1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "PSR-7 message implementation",
+            "keywords": [
+                "http",
+                "message",
+                "stream",
+                "uri"
+            ],
+            "time": "2015-11-03 01:34:55"
+        },
+        {
+            "name": "intervention/image",
+            "version": "2.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Intervention/image.git",
+                "reference": "a67ee32df0c6820cc6e861ad4144ee0ef9c74aa3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Intervention/image/zipball/a67ee32df0c6820cc6e861ad4144ee0ef9c74aa3",
+                "reference": "a67ee32df0c6820cc6e861ad4144ee0ef9c74aa3",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "guzzlehttp/psr7": "~1.1",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9.2",
+                "phpunit/phpunit": "3.*"
+            },
+            "suggest": {
+                "ext-gd": "to use GD library based image processing.",
+                "ext-imagick": "to use Imagick based image processing.",
+                "intervention/imagecache": "Caching extension for the Intervention Image library"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Intervention\\Image\\": "src/Intervention/Image"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oliver Vogel",
+                    "email": "oliver@olivervogel.net",
+                    "homepage": "http://olivervogel.net/"
+                }
+            ],
+            "description": "Image handling and manipulation library with support for Laravel integration",
+            "homepage": "http://image.intervention.io/",
+            "keywords": [
+                "gd",
+                "image",
+                "imagick",
+                "laravel",
+                "thumbnail",
+                "watermark"
+            ],
+            "time": "2015-11-30 17:03:21"
+        },
+        {
             "name": "jakub-onderka/php-console-color",
             "version": "0.1",
             "source": {
@@ -418,16 +538,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.1.26",
+            "version": "v5.1.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "be7fbb60376bd61f07e9c637473e5b2cf7eebe5c"
+                "reference": "b16f80878fd3603022d3c84593397cedd9af0bcf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/be7fbb60376bd61f07e9c637473e5b2cf7eebe5c",
-                "reference": "be7fbb60376bd61f07e9c637473e5b2cf7eebe5c",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/b16f80878fd3603022d3c84593397cedd9af0bcf",
+                "reference": "b16f80878fd3603022d3c84593397cedd9af0bcf",
                 "shasum": ""
             },
             "require": {
@@ -473,7 +593,6 @@
                 "illuminate/events": "self.version",
                 "illuminate/exception": "self.version",
                 "illuminate/filesystem": "self.version",
-                "illuminate/foundation": "self.version",
                 "illuminate/hashing": "self.version",
                 "illuminate/http": "self.version",
                 "illuminate/log": "self.version",
@@ -543,7 +662,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-12-02 21:59:57"
+            "time": "2015-12-17 20:35:38"
         },
         {
             "name": "laravelcollective/html",
@@ -597,16 +716,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.15",
+            "version": "1.0.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "31525caf9e8772683672fefd8a1ca0c0736020f4"
+                "reference": "183e1a610664baf6dcd6fceda415baf43cbdc031"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/31525caf9e8772683672fefd8a1ca0c0736020f4",
-                "reference": "31525caf9e8772683672fefd8a1ca0c0736020f4",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/183e1a610664baf6dcd6fceda415baf43cbdc031",
+                "reference": "183e1a610664baf6dcd6fceda415baf43cbdc031",
                 "shasum": ""
             },
             "require": {
@@ -620,7 +739,7 @@
                 "mockery/mockery": "~0.9",
                 "phpspec/phpspec": "^2.2",
                 "phpspec/prophecy-phpunit": "~1.0",
-                "phpunit/phpunit": "~4.1"
+                "phpunit/phpunit": "~4.8"
             },
             "suggest": {
                 "ext-fileinfo": "Required for MimeType",
@@ -677,7 +796,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2015-09-30 22:26:59"
+            "time": "2015-12-19 20:16:43"
         },
         {
             "name": "maximebf/debugbar",
@@ -1001,6 +1120,55 @@
                 "random"
             ],
             "time": "2015-12-10 14:48:13"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
+                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2015-05-04 20:22:00"
         },
         {
             "name": "psr/log",

@@ -148,6 +148,7 @@ return [
         Barryvdh\Debugbar\ServiceProvider::class,
         Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
 
 
     ],
@@ -201,6 +202,8 @@ return [
 
         'Debugbar'  => Barryvdh\Debugbar\Facade::class,
         'Form'      => Collective\Html\FormFacade::class,
+        'Image'     => Intervention\Image\Facades\Image::class
+
     ],
 
 ];
