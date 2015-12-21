@@ -25,7 +25,7 @@ class ImagesController extends Controller
     * Show all images
     */
     public function getIndex(){
-        $images = \App\Image::paginate(48);
+        $images = \App\Image::paginate(36);
         return view('images.index')->with('images', $images);
     }
 
