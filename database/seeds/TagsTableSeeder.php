@@ -12,39 +12,47 @@ class TagsTableSeeder extends Seeder
     public function run()
     {
         $tags = [
-            'camino del norte',
-            'camino ingles',
-            'cycling',
-            'climbing',
             'Bangkok',
             'Bilbao',
             'Buddhism',
+            'Camino del Norte',
+            'Camino Ingl&egrave;s',
+            'Chenab Valley',
             'Chiang Mai',
+            'climbing',
+            'cycling',
+
+
             'Delhi',
             'gold',
             'Himachal Pradesh',
             'holy man',
             'Jammu & Kashmir',
             'Indian Railways',
+            'Kangra Valley',
             'Keylong',
             'Khardung',
             'Khardung La',
             'Kunzum La',
             'Ladakh',
             'Leh',
-            'narrow-gauge',
-            'Nubra Valley',
             'monastery',
             'mural',
+            'narrow-gauge',
+            'Nubra Valley',
+            'Orissa',
+            'Panji Valley',
             'pedal-powered',
             'portrait',
             'prayer flags',
             'prayer wheel',
             'Sinthan Top',
             'Spiti',
+            'Srinagar',
             'Stanage',
             'Tamil Nadu',
-            'trohloff'
+            'trohloff',
+            'West Bengal'
         ];
 
         foreach($tags as $tagName){

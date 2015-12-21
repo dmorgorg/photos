@@ -70,33 +70,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <!-- https://github.com/dimsemenov/Magnific-Popup.git -->
     <script src="/js/magnific.js"></script>
+    <script src="/js/clientSide.js"></script>
 
-    <script>
-    $(document).ready(function() {
-
-        $('.popup').magnificPopup({
-            //delegate: 'a',
-            type: 'image',
-            gallery: {
-                enabled: true,
-                preload: [1, 4]// preload previous and next four images
-            },
-            image: {
-        //         markup: '<div class="mfp-figure">'+
-        //     '<div class="mfp-close"></div>'+
-        //     '<div class="mfp-img"></div>'+
-        //     '<div class="mfp-bottom-bar">'+
-        //       '<div class="mfp-title">'+'titel'+'</div>'+
-        //       '<div class="mfp-counter"></div>'+
-        //     '</div>'+
-        //   '</div>', // Popup HTML markup. `.mfp-img` div will be replaced with img tag, `.mfp-close` by close button
-                titleSrc: 'title'
-                // titleSrc: function(item) {
-                //     return item.el.attr('title');
-                }
-            });
-        });
-        </script>
+    
 
         {{-- Yield any page specific JS files or anything else you might want at the end of the body --}}
         @yield('body')

@@ -20,21 +20,21 @@
 
       <ul class="nav navbar-nav navbar-right">
         @if(Auth::check())
-        <li><a href="/images/create" >Create &nbsp;<i class="fa fa-camera-retro fa-lg"></i></a>
+        <li><a href="/images/create" >Create </a>
         </li>
-        <li><a href="/images/create" >Read &nbsp;<i class="fa fa-camera-retro fa-lg"></i></a>
+        <li><a href="/images/create" >Read </a>
         </li>
-        <li><a href="/">Update &nbsp;<i class="fa fa-camera-retro fa-lg"></i></a>
+        <li><a href="/">Update </a>
         </li>
-        <li><a href="/">Delete &nbsp;<i class="fa fa-camera-retro fa-lg"></i></a>
+        <li><a href="/">Delete </a>
         </li>
         <li><a href="/logout">Sign Out, {{ Auth::user()->name }}</a>
         </li>
         @else
-        <li><a href="/">View Photos &nbsp;<i class="fa fa-camera-retro fa-lg"></i></a>
+        <li><a href="/images/index">View Photos &nbsp;<i class="fa fa-camera-retro fa-lg"></i></a>
         </li>
-        <li><a href="/">View Album</a>
-        </li>
+        <!-- <li><a href="/">View Album</a>
+        </li> -->
         <li><a href="/login">Sign In</a>
         </li>
         @endif

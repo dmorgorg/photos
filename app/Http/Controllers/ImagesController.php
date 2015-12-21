@@ -25,7 +25,7 @@ class ImagesController extends Controller
     * Show all images
     */
     public function getIndex(){
-        $images = \App\Image::all();
+         $images = \App\Image::paginate(48);
          return view('images.index')->with('images', $images);
     }
 
@@ -39,16 +39,17 @@ class ImagesController extends Controller
         $countryModel = new \App\Country();
         $countries_for_dropdown = $countryModel->getCountriesForDropdown();
 
-        // dump($countries_for_dropdown);
+        // get list of tags
+        $tagModel = new \App\Tag();
+        $tags_for_dropdown = $tagModel->getTagsForDropdown();
+
         return view('images.create')
-            ->with('countries_for_dropdown', $countries_for_dropdown);
+        ->with('countries_for_dropdown', $countries_for_dropdown)
+        ->with('tags_for_dropdown', $tags_for_dropdown);
     }
 
-    public function getConfirm(){
 
-    }
-
-    public function postCreate(){
+    public function postCreate(Request $request){
 
     }
 
