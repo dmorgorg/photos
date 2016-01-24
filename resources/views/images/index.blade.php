@@ -2,8 +2,6 @@
 
 @section('content')
 
-
-
     <div class='container'>
     @foreach($images as $image)
         <div class='col-xs-6 col-sm-4 col-md-3'>
@@ -14,6 +12,5 @@
     @endforeach
     </div>
     {!! $images->render() !!}
-
 
 @stop
